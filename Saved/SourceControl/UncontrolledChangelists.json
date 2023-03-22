@@ -1,0 +1,20 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/Users/GAUT2905/Documents/Unreal Projects/SwitchCorr/Content/Switch.umap",
+				"C:/Users/GAUT2905/Documents/Unreal Projects/SwitchCorr/Content/BP/SwitchCharacterBP.uasset",
+				"C:/Users/GAUT2905/Documents/Unreal Projects/SwitchCorr/Content/BP/BPSwitchCharacter.uasset",
+				"C:/Users/GAUT2905/Documents/Unreal Projects/SwitchCorr/Content/Mesh/Animations/SwitchCharaAnimationBP.uasset",
+				"C:/Users/GAUT2905/Documents/Unreal Projects/SwitchCorr/Content/Mesh/Animations/SwitchAnimation.uasset",
+				"C:/Users/GAUT2905/Documents/Unreal Projects/SwitchCorr/Content/Mesh/Animations/OtherSwitchAnimation.uasset",
+				"C:/Users/GAUT2905/Documents/Unreal Projects/SwitchCorr/Content/Instance.umap",
+				"C:/Users/GAUT2905/Documents/Unreal Projects/SwitchCorr/Content/BP/SwitchCharaAnimationBP.uasset",
+				"C:/Users/GAUT2905/Documents/Unreal Projects/SwitchCorr/Content/BP/SwitchCharacterBP1.uasset"
+			]
+		}
+	]
+}
