@@ -24,8 +24,16 @@ class SWITCHCORR_API ASwitcher : public AActor
 		TObjectPtr<AController> fpc = nullptr;
 
 	int currentSwitchIndex = 0;
-
 	FOnIncrementSwitch onIncrementSwitch;
+
+
+	UPROPERTY(EditAnywhere, meta = (UIMin = 1, ClampMin = 1, UIMax = 10, ClampMax = 10))
+		int maxSpawn = 5;
+
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<ASwitchCharacter> memberTeam;
+
+
 public:	
 	ASwitcher();
 private:
@@ -34,4 +42,7 @@ private:
 	virtual void BeginPlay() override;
 	virtual void Tick(float DeltaTime) override;
 	void Init();
+
+
+	void SpawnTeamMember(); 
 };

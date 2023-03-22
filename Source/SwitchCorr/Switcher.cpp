@@ -49,6 +49,17 @@ void ASwitcher::Init()
 		return;
 
 	fpc->InputComponent->BindAction("Switch", IE_Pressed, this, &ASwitcher::IncrementSwitch);
+	fpc->InputComponent->BindAction("Create", IE_Pressed, this, &ASwitcher::SpawnTeamMember);
 	Switch();
+}
+
+void ASwitcher::SpawnTeamMember()
+{
+	if (switchTeam.Num() < maxSpawn)
+	{
+		const FVector _finalLocation = currentChar->GetActorLocation() + currentChar->GetActorRightVector() * 100;
+		ASwitchCharacter* _teamMate = GetWorld()->SpawnActor<ASwitchCharacter>(memberTeam, _finalLocation, FRotator(0));
+		switchTeam.Add(_teamMate);
+	}
 }
 

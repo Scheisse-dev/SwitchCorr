@@ -13,6 +13,7 @@ UCLASS(BlueprintType)
 class SWITCHCORR_API UDataObject : public UObject
 {
 	GENERATED_BODY()
+public:
 		UPROPERTY(EditAnywhere)
 		float dayTime = 0;
 
@@ -20,5 +21,6 @@ public:
 	FORCEINLINE void UpdateTime()
 	{
 		dayTime++;
+		//UE_LOG(LogTemp, Warning, TEXT("Ok"));
 	}
 };

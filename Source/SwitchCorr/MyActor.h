@@ -21,5 +21,5 @@ public:
 private:
 	virtual void BeginPlay() override;
 	virtual void Tick(float DeltaTime) override;
-
+	virtual void EndPlay(const EEndPlayReason::Type) override;
 };
